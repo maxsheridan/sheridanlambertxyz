@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'ABC Diatype';
+    src: url('/assets/type/ABC_Diatype.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Medium';
+    src: url('/assets/type/ABC_Diatype_Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+}
+
+html {
+    font-size: 16px;
+    cursor: url('/assets/graphics/smiley_point.svg'), auto;
+}    
+
+html a:hover {
+    cursor: url('/assets/graphics/smiley_hover.svg'), auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: #0E000E url('/assets/graphics/background.webp') no-repeat 15% center/cover;
+    background-attachment: fixed; 
+    -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.content {
+    padding: 0 1.5rem 1.5rem;
+}
+
+p {
+    font-family: 'ABC Diatype', Helvetica, Arial, sans-serif;
+    font-size: clamp(1.15rem,3vw,1.3rem);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    max-width: 45rem;
+    color: #FFFEFC;
+    margin: 1rem 0 0 0;
+}
+
+h2 {
+    font-family: 'ABC Diatype', Helvetica, Arial, sans-serif;
+    font-size: clamp(1.7rem,3.5vw,2.5rem);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.3;
+}
+
+a {
+    color: #FFFEFC;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 769px) {
+	.copyright {
+        position: fixed;
+        right: 1.625rem;
+        bottom: 2rem;
+        transform-origin: bottom right;
+        transform: rotate(90deg) translateY(50%);
+    }
+}    
+
+/*Mobile*/
+
+@media only screen and (min-width: 361px) and (max-width: 480px) {
+    p {
+        max-width: 94%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        padding: 0 1rem 0;
+    }
+
+    footer {
+        padding: 0 1rem 1.5rem; 
+    }
+}
