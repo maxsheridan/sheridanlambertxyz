@@ -179,9 +179,9 @@ svg.arrow-upper-right-light {
     }
 
     .copyright {
-        transform: unset;
-        transform-origin: unset;
         margin-top: 1rem;
         margin-bottom: unset;
+        transform: unset;
+        transform-origin: unset;
     }
 }
