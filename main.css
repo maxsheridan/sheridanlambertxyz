@@ -126,12 +126,6 @@ h1 {
 
 /*SVGs*/
 
-svg.marquee {
-    width: auto;
-    height: var(--body-font-size);
-    padding-right: .5rem;
-}
-
 svg.arrow-upper-right-light {
     width: auto;
     height: clamp(.75rem,1.75vw,.813rem);
@@ -139,10 +133,6 @@ svg.arrow-upper-right-light {
 }
 
 /*Special classes*/
-
-.no-link {
-    pointer-events: none;
-}
 
 .blink {
     -webkit-animation-name: blink;
