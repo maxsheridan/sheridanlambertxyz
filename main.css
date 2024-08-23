@@ -170,16 +170,18 @@ svg.arrow-upper-right-light {
     filter: url(#glow);
 }
 
-@media only screen and (min-width: 769px) {
-    .hover-object:hover + .hover-image {
-        visibility: visible;
-        pointer-events: none;
-    }
-}
-
 @media only screen and (max-width: 768px) {
+
+    footer {
+        flex-direction: column;
+        position: relative;
+        padding: unset;
+    }
+
     .copyright {
         transform: unset;
         transform-origin: unset;
+        margin-top: 1rem;
+        margin-bottom: unset;
     }
 }
