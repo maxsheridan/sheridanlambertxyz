@@ -85,7 +85,7 @@ footer {
 }
 
 p {   
-    max-width: 35rem;
+    max-width: 38rem;
     font-size: var(--body-font-size);
     line-height: 1.5;
 }
