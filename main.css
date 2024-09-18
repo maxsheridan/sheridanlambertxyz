@@ -156,15 +156,6 @@ svg.arrow-upper-right-light {
     animation-iteration-count: infinite;
 }
 
-@keyframes blink {
-    0%, 15% {
-        opacity: 0;
-    }
-    16%, 100% {
-        opacity: 1;
-    }
-}
-
 @-webkit-keyframes blink {
     0%, 15% {
         opacity: 0;
@@ -174,16 +165,19 @@ svg.arrow-upper-right-light {
     }
 }
 
-.glow {
-    filter: none;
-    transition: filter 0.3s ease;
-}
-  /* Hover state - apply the glow filter */
-.glow:hover {
-    filter: url(#glow);
+@keyframes blink {
+    0%, 15% {
+        opacity: 0;
+    }
+    16%, 100% {
+        opacity: 1;
+    }
 }
 
 @media only screen and (max-width: 768px) {
+    body {
+        padding-bottom: 1.5rem;
+    }
 
     footer {
         flex-direction: column;
